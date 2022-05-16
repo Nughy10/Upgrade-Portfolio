@@ -201,7 +201,7 @@
     align-items: center;
     position: relative;
     font-family: $type-font-header; 
-    margin-top: 50px; 
+    margin-top: 50px;
 
     &__cover{
         position: absolute;
@@ -237,7 +237,6 @@
 
         @include tablet{
             font-size: 17px; 
-            margin-top: 48px; 
         }
         @include desktop-normal{
             font-size: 23px; 
@@ -255,49 +254,386 @@
             font-size: 58px; 
             margin-top: 120px;
         }
+
+        h3{ 
+
+            @include tablet{
+                font-size: 20px; 
+                margin-top: 20px; 
+            }
+            @include desktop-normal{
+                font-size: 26px; 
+                margin-top: -25px; 
+            }
+            @include desktop-nughy{
+                font-size: 36px; 
+                margin-top: -20px; 
+            }
+            @include desktop-big{
+                font-size: 36px; 
+                margin-top: -15px; 
+            }
+            @include desktop-extra-big{
+                font-size: 72px; 
+                margin-top: -5px; 
+            }
+        }
+
+        h5{ 
+
+            @include tablet{
+                margin-top: -10px;
+            }
+            @include desktop-normal{
+                margin-top: -10px; 
+            }
+            @include desktop-nughy{
+                margin-top: -12px; 
+            }
+            @include desktop-big{
+                margin-top: -15px; 
+            }
+            @include desktop-extra-big{
+                margin-top: -30px; 
+            }
+        }
     }
 
     &__form{
         position: relative;
+        display: flex; 
+        flex-direction: column;
         background-color: $form-color;
-        width:400px;
-        border-radius:10px; 
+        border-radius:10px;
+
+        @include tablet{
+            width: 300px;
+        }
+        @include desktop-normal{
+            width: 420px; 
+            height: 460px; 
+            font-size: 20px;
+        }
+        @include desktop-nughy{
+            width: 540px; 
+            height: 520px; 
+            font-size: 22px;
+        }
+        @include desktop-big{
+            width: 575px; 
+            height: 510px; 
+            font-size: 24px;
+        }
+        @include desktop-extra-big{
+            width: 1050px; 
+            height: 900px; 
+            font-size: 42px;
+        }
     }
     
-    &__pointer--text, &__pointer--email{
-        width:120px;
-        margin-top: 20px;
-        margin-left: 10px; 
+    &__first, &__last, &__email{
+        display: flex; 
+        flex-direction: column; 
         border-radius:3px;
         border:1px solid $form-color;
         background-color:$form-color;
-        display:inline-block;
+
+        @include tablet{
+            width:275px;
+            margin-top: 10px;
+            margin-left: 10px; 
+        }
+        @include desktop-normal{
+            width:380px;
+            margin-top: 15px;
+            margin-left: 15px; 
+        }
+        @include desktop-nughy{
+            width:490px;
+            margin-top: 15px;
+            margin-left: 18px; 
+        }
+        @include desktop-big{
+            width:520px;
+            margin-top: 15px;
+            margin-left: 20px; 
+        }
+        @include desktop-extra-big{
+            width: 980px;
+            margin-top: 22px;
+            margin-left: 25px; 
+        }
+
+        input{ 
+
+            @include tablet{
+                margin-left: 5px; 
+                margin-top: 5px; 
+            }
+            @include desktop-normal{
+                margin-left: 5px; 
+                margin-top: 5px;
+                height: 25px; 
+                font-size: 15px; 
+            }
+            @include desktop-nughy{
+                margin-left: 5px; 
+                margin-top: 5px;
+                height: 26px; 
+                font-size: 15px;
+                padding-left: 5px; 
+            }
+            @include desktop-big{
+                margin-left: 10px; 
+                margin-top: 5px;
+                height: 30px; 
+                font-size: 18px; 
+            }
+            @include desktop-extra-big{
+                margin-left: 15px; 
+                margin-top: 10px;
+                height: 70px; 
+                font-size: 34px; 
+            }
+        }
     }
 
-    &__pointer--submit{
-        width:100%;
-        margin-top:32px;
+    &__submit{  
         border-radius:5px;
         border:1px solid $dark-color;
-        display:block;
         color: $light-color;
         background-color: $dark-color;
+
+        @include tablet{
+            width: 85%; 
+            height: 25px; 
+            margin-top: 10px; 
+            margin-bottom: 12px;
+            margin-left: 20px; 
+        }
+        @include desktop-normal{
+            width: 86%; 
+            height: 30px; 
+            margin-top: 10px; 
+            margin-bottom: 12px;
+            margin-left: 25px; 
+        }
+        @include desktop-nughy{
+            width: 87%; 
+            height: 30px; 
+            margin-top: 10px; 
+            margin-bottom: 12px;
+            margin-left: 32px; 
+        }
+        @include desktop-big{
+            width: 88%; 
+            height: 40px; 
+            margin-top: 10px; 
+            margin-bottom: 12px;
+            margin-left: 30px; 
+        }
+        @include desktop-extra-big{
+            width: 90%; 
+            height: 70px; 
+            margin-top: 10px; 
+            margin-bottom: 12px;
+            margin-left: 50px; 
+        }
+        
+        input{
+            width: 100%;
+            border:1px solid $dark-color;
+            color: $light-color;
+            background-color: $dark-color;
+
+            @include tablet{
+                font-size: 12px; 
+                margin-top: 5px; 
+            }
+            @include desktop-normal{
+                font-size: 16px; 
+                margin-top: 5px; 
+            }
+            @include desktop-nughy{
+                font-size: 16px; 
+                margin-top: 5px; 
+            }
+            @include desktop-big{
+                font-size: 20px; 
+                margin-top: 8px; 
+            }
+            @include desktop-extra-big{
+                font-size: 36px; 
+                margin-top: 12px; 
+            }
+        }
     } 
     
-    &__pointer--submit:hover{
+    &__submit:hover{
         cursor: pointer; 
     }    
 
-    &__pointer--area{
-        width:100%;
-        height:100px;
-        margin:8px 0;
-        border-radius:3px;
-        border:1px solid $light-color;
-        background-color: $light-color;			
-        /*resize: vertical | horizontal | none | both*/
-        resize:none;
-        display:block;
+    &__message{
+
+        @include tablet{
+            margin-left: 12px; 
+            margin-top: 8px; 
+        }
+        @include desktop-normal{
+            margin-left: 18px; 
+            margin-top: 12px; 
+        }
+        @include desktop-nughy{
+            margin-left: 20px; 
+            margin-top: 12px; 
+        }
+        @include desktop-big{
+            margin-left: 22px; 
+            margin-top: 14px; 
+        }
+        @include desktop-extra-big{
+            margin-left: 28px; 
+            margin-top: 16px; 
+        } 
     }
-   
+
+    &__area{
+         
+        @include tablet{
+            width:90%;
+            height: 100px; 
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        @include desktop-normal{
+            width:90%;
+            font-size: 15px;
+            height: 120px; 
+        }
+        @include desktop-nughy{
+            width:92%;
+            font-size: 15px;
+            height: 160px; 
+            margin-left: 5px; 
+            padding-left: 5px; 
+        }
+        @include desktop-big{
+            width:92%;
+            font-size: 18px;
+            height: 125px; 
+            padding-left: 5px; 
+        }
+        @include desktop-extra-big{
+            width:93%;
+            font-size: 34px;
+            height: 220px; 
+            padding-left: 10px; 
+            margin-left: 20px; 
+        } 
+    }
+
+    &__down{
+        position: relative; 
+        display: flex;
+        flex-direction: row;
+    }
+    
+    &__left{
+        display: flex;
+        flex-direction: column;
+        
+        @include tablet{
+            margin-top: -350px; 
+        }
+        @include desktop-normal{ 
+            margin-top: -435px; 
+        }
+        @include desktop-nughy{
+            margin-top: -500px; 
+        }
+        @include desktop-big{
+            margin-top: -500px; 
+        }
+        @include desktop-extra-big{
+            margin-top: -880px; 
+        } 
+        
+        img{
+            @include tablet{
+                width: 10%;
+                margin-bottom: 120px; 
+                margin-left: 5px; 
+            }
+            @include desktop-normal{ 
+                width: 12%;   
+                margin-bottom: 140px; 
+                margin-left: 15px; 
+            }
+            @include desktop-nughy{
+                width: 10%;   
+                margin-bottom: 170px; 
+                margin-left: 15px;
+            }
+            @include desktop-big{
+                width: 12%;   
+                margin-bottom: 170px; 
+                margin-left: 20px; 
+            }
+            @include desktop-extra-big{
+                width: 18%;   
+                margin-bottom: 280px; 
+                margin-left: 50px; 
+                
+            } 
+        }
+    }
+
+    &__right{
+        display: flex;
+        flex-direction: column;
+
+        @include tablet{
+            margin-top: -350px;  
+        }
+        @include desktop-normal{    
+            margin-top: -435px; 
+        }
+        @include desktop-nughy{
+            margin-top: -500px; 
+        }
+        @include desktop-big{
+            margin-top: -500px; 
+        }
+        @include desktop-extra-big{
+            margin-top: -880px;
+        }
+        
+        img{
+            @include tablet{
+                width: 5%;
+                margin-bottom: 122px; 
+                margin-left: 460px; 
+            }
+            @include desktop-normal{
+                width: 5%;
+                margin-bottom: 145px; 
+                margin-left: 645px; 
+            }
+            @include desktop-nughy{
+                width: 4%;
+                margin-bottom: 165px; 
+                margin-left: 920px;
+            }
+            @include desktop-big{
+                width: 4%;
+                margin-bottom: 170px; 
+                margin-left: 990px; 
+            }
+            @include desktop-extra-big{
+                width: 4%;
+                margin-bottom: 280px; 
+                margin-left: 1950px; 
+            } 
+        }
+    }
 }
