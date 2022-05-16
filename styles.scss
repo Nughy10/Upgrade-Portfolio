@@ -194,14 +194,361 @@
 }
 
 
+//MAIN
+.main{
+    display: flex; 
+    direction: column; 
+    font-family: $type-font-header;
+}
+
+.container-background{
+    position: absolute; 
+
+    @include tablet{
+        width: 768px; 
+        height: 481px;
+        margin-top: 50px; 
+        margin-left: -8px;     
+    }
+    @include desktop-normal{
+        width: 1024px; 
+        height: 641px;
+        margin-top: 70px; 
+        margin-left: -10px;
+    }
+    @include desktop-nughy{
+        width: 1366px; 
+        height: 768px;
+        margin-top: 80px; 
+        margin-left: -8px;
+    }
+    @include desktop-big{
+        width: 1440px; 
+        height: 740px;
+        margin-top: 72px; 
+        margin-left: -8px;
+    }
+    @include desktop-extra-big{
+        width: 2560px; 
+        height: 1374px;
+        margin-top: 130px; 
+        margin-left: -8px;
+    }
+}
+
+.container-2{
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+
+    @include tablet{
+        margin-top: 120px; 
+        margin-bottom: 85px; 
+    }
+    @include desktop-normal{
+        margin-top: 160px;
+        margin-bottom: 115px;  
+    }
+    @include desktop-nughy{
+        margin-top: 200px; 
+        margin-bottom: 135px;
+    }
+    @include desktop-big{
+        margin-top: 180px; 
+        margin-bottom: 120px; 
+    }
+    @include desktop-extra-big{
+        margin-top: 320px;
+        margin-bottom: 205px; 
+    }
+
+    &__icons{
+
+        @include tablet{
+            font-size: 20px; 
+            margin-left: 70px; 
+            margin-top: 36px; 
+        }
+        @include desktop-normal{ 
+            font-size: 28px; 
+            margin-left: 90px; 
+            margin-top: 50px;
+        }
+        @include desktop-nughy{
+            font-size: 30px; 
+            margin-left: 150px; 
+            margin-top: 60px;
+        }
+        @include desktop-big{
+            font-size: 34px; 
+            margin-left: 130px; 
+            margin-top: 55px;
+        }
+        @include desktop-extra-big{
+            font-size: 65px; 
+            margin-left: 260px; 
+            margin-top: 100px;
+        }
+    }  
+
+    &__icons--experience{
+
+        @include tablet{
+            font-size: 36px; 
+            margin-left: 62px;
+            margin-top: 35px; 
+        }
+        @include desktop-normal{ 
+            font-size: 44px; 
+            margin-left: 80px;
+            margin-top: 50px; 
+        }
+        @include desktop-nughy{
+            font-size: 48px; 
+            margin-left: 140px;
+            margin-top: 60px;
+        }
+        @include desktop-big{
+            font-size: 50px; 
+            margin-left: 120px; 
+            margin-top: 55px;
+        }
+        @include desktop-extra-big{
+            font-size: 95px; 
+            margin-left: 245px; 
+            margin-top: 100px;
+        }
+    }
+}
+
+.container-3{
+    position: relative; 
+    display: flex; 
+    direction: column; 
+
+    &__title1{
+
+        @include tablet{
+            margin-top: 110px; 
+            margin-left: 180px; 
+            font-size: 10px;  
+        }
+        @include desktop-normal{ 
+            margin-top: 150px; 
+            margin-left: 250px; 
+            font-size: 14px; 
+        }
+        @include desktop-nughy{
+            margin-top: 190px; 
+            margin-left: 320px; 
+            font-size: 16px; 
+        }
+        @include desktop-big{
+            margin-top: 160px; 
+            margin-left: 380px; 
+            font-size: 17px;
+        }
+        @include desktop-extra-big{
+            margin-top: 300px; 
+            margin-left: 650px; 
+            font-size: 32px; 
+        }
+    }
+
+    &__subtitle{
+
+        @include tablet{
+            margin-top: 20px;  
+        }
+        @include desktop-normal{ 
+            margin-top: 30px; 
+        }
+        @include desktop-nughy{
+            margin-top: 34px;   
+        }
+        @include desktop-big{
+            margin-top: 35px; 
+        }
+        @include desktop-extra-big{
+            margin-top: 60px; 
+        }
+    }
+
+    &__info{
+        display: flex; 
+        flex-direction: row; 
+        align-items: baseline;
+
+        @include tablet{
+            margin-top: -25px; 
+            margin-left: 40px;
+        }
+        @include desktop-normal{ 
+            margin-top: -34px; 
+            margin-left: 50px;
+        }
+        @include desktop-nughy{
+            margin-top: -38px; 
+            margin-left: 65px;
+        }
+        @include desktop-big{
+            margin-top: -44px; 
+            margin-left: 60px;
+        }
+        @include desktop-extra-big{
+            margin-top: -80px; 
+            margin-left: 100px;
+        }
+
+        h4{
+
+            @include tablet{
+                font-size: 12px;   
+            }
+            @include desktop-normal{ 
+                font-size: 16px;  
+            }
+            @include desktop-nughy{
+                font-size: 18px; 
+            }
+            @include desktop-big{
+                font-size: 20px;
+            }
+            @include desktop-extra-big{
+                font-size: 36px;
+            }
+        }
+
+        p{
+
+            @include tablet{
+                font-size: 10px;
+                margin-left: 5px;  
+            }
+            @include desktop-normal{ 
+                font-size: 13px;
+                margin-left: 5px; 
+            }
+            @include desktop-nughy{
+                font-size: 13px;
+                margin-left: 5px; 
+            }
+            @include desktop-big{
+                font-size: 16px;
+                margin-left: 5px; 
+            }
+            @include desktop-extra-big{
+                font-size: 30px;
+                margin-left: 5px; 
+            }
+        }
+    }
+
+    &__title2{
+
+        @include tablet{
+            margin-left: 180px; 
+            margin-top: -10px;
+            font-size: 10px;  
+        }
+        @include desktop-normal{ 
+            margin-left: 250px; 
+            margin-top: -20px;
+            font-size: 14px; 
+        }
+        @include desktop-nughy{
+            margin-top: -10px; 
+            margin-left: 320px; 
+            font-size: 16px; 
+        }
+        @include desktop-big{
+            margin-top: -25px; 
+            margin-left: 380px;  
+            font-size: 17px;
+        }
+        @include desktop-extra-big{
+            margin-top: -40px; 
+            margin-left: 650px; 
+            font-size: 32px; 
+        }
+    }
+
+    &__content{
+        display: flex; 
+        flex-direction: column; 
+        align-items: baseline; 
+
+        @include tablet{
+            margin-top: 20px;
+        }
+        @include desktop-normal{ 
+            margin-top: 30px;
+        }
+        @include desktop-nughy{
+            margin-top: 32px; 
+        }
+        @include desktop-big{
+            margin-top: 35px;
+        }
+        @include desktop-extra-big{
+            margin-top: 60px;
+        }
+        
+        h4{
+
+            @include tablet{
+                font-size: 12px;   
+            }
+            @include desktop-normal{
+                font-size: 16px; 
+            }
+            @include desktop-nughy{
+                font-size: 18px;
+            }
+            @include desktop-big{
+                font-size: 20px;
+            }
+            @include desktop-extra-big{
+                font-size: 36px;
+            }
+        }
+
+        p{
+
+            @include tablet{
+                font-size: 10px;
+                margin-left: 5px;  
+            }
+            @include desktop-normal{
+                font-size: 13px;
+                margin-left: 5px; 
+            }
+            @include desktop-nughy{
+                font-size: 15px;
+                margin-left: 5px; 
+            }
+            @include desktop-big{
+                font-size: 16px;
+                margin-left: 5px; 
+            }
+            @include desktop-extra-big{
+                font-size: 30px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+
 //FOOTER
+.footer{
+    font-family: $type-font-header;
+}
 .container-4{
     display: flex; 
     flex-direction: column;
     align-items: center;
-    position: relative;
     font-family: $type-font-header; 
-    margin-top: 50px;
 
     &__cover{
         position: absolute;
@@ -300,7 +647,7 @@
     }
 
     &__form{
-        position: relative;
+        position: relative; 
         display: flex; 
         flex-direction: column;
         background-color: $form-color;
@@ -445,6 +792,7 @@
             border:1px solid $dark-color;
             color: $light-color;
             background-color: $dark-color;
+            cursor: pointer; 
 
             @include tablet{
                 font-size: 12px; 
@@ -467,11 +815,7 @@
                 margin-top: 12px; 
             }
         }
-    } 
-    
-    &__submit:hover{
-        cursor: pointer; 
-    }    
+    }  
 
     &__message{
 
@@ -533,7 +877,7 @@
     }
 
     &__down{
-        position: relative; 
+
         display: flex;
         flex-direction: row;
     }
@@ -541,49 +885,56 @@
     &__left{
         display: flex;
         flex-direction: column;
+        position: relative; 
         
         @include tablet{
             margin-top: -350px; 
+            width: 200px; 
+            margin-right: 350px; 
         }
         @include desktop-normal{ 
-            margin-top: -435px; 
+            margin-top: -450px; 
+            width: 200px; 
+            margin-right: 600px; 
         }
         @include desktop-nughy{
             margin-top: -500px; 
+            width: 200px; 
+            margin-right: 900px; 
         }
         @include desktop-big{
             margin-top: -500px; 
+            width: 200px; 
+            margin-right: 1000px; 
         }
         @include desktop-extra-big{
             margin-top: -880px; 
+            width: 200px; 
+            margin-right: 2050px; 
         } 
         
         img{
+            cursor: pointer; 
+
             @include tablet{
-                width: 10%;
+                width: 14%;
                 margin-bottom: 120px; 
-                margin-left: 5px; 
             }
             @include desktop-normal{ 
-                width: 12%;   
-                margin-bottom: 140px; 
-                margin-left: 15px; 
+                width: 20%;   
+                margin-bottom: 150px; 
             }
             @include desktop-nughy{
-                width: 10%;   
+                width: 22%;   
                 margin-bottom: 170px; 
-                margin-left: 15px;
             }
             @include desktop-big{
-                width: 12%;   
+                width: 25%;   
                 margin-bottom: 170px; 
-                margin-left: 20px; 
             }
             @include desktop-extra-big{
-                width: 18%;   
+                width: 46%;   
                 margin-bottom: 280px; 
-                margin-left: 50px; 
-                
             } 
         }
     }
@@ -591,48 +942,56 @@
     &__right{
         display: flex;
         flex-direction: column;
+        position: relative; 
 
         @include tablet{
-            margin-top: -350px;  
+            margin-top: -350px; 
+            width: 200px;  
         }
         @include desktop-normal{    
-            margin-top: -435px; 
+            margin-top: -450px; 
+            width: 200px;
         }
         @include desktop-nughy{
             margin-top: -500px; 
+            width: 200px;
         }
         @include desktop-big{
             margin-top: -500px; 
+            width: 200px;
         }
         @include desktop-extra-big{
             margin-top: -880px;
+            width: 200px;
         }
         
         img{
+            cursor: pointer; 
+
             @include tablet{
-                width: 5%;
+                width: 14%;
                 margin-bottom: 122px; 
-                margin-left: 460px; 
+                margin-left: 170px;  
             }
             @include desktop-normal{
-                width: 5%;
-                margin-bottom: 145px; 
-                margin-left: 645px; 
+                width: 20%;
+                margin-bottom: 150px; 
+                margin-left: 155px; 
             }
             @include desktop-nughy{
-                width: 4%;
+                width: 22%;
                 margin-bottom: 165px; 
-                margin-left: 920px;
+                margin-left: 155px;
             }
             @include desktop-big{
-                width: 4%;
+                width: 25%;
                 margin-bottom: 170px; 
-                margin-left: 990px; 
+                margin-left: 150px; 
             }
             @include desktop-extra-big{
-                width: 4%;
+                width: 46%;
                 margin-bottom: 280px; 
-                margin-left: 1950px; 
+                margin-left: 100px; 
             } 
         }
     }
